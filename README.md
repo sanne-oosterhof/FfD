@@ -33,8 +33,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
   - Het vergroten van letters
-  - De letters vol laten stromen
   - De kenmerkende blauwe driehoek van Fanta onder de tekst laten verschijnen
+  - De letters vol laten stromen
  
 </details>
 
@@ -51,15 +51,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Voor mij waren keyframes nog helemaal nieuw, 
+  hier heb ik dus veel van geleerd. 
+  Ook heb ik voor het eerst mijn eigen animatie gecodeerd, 
+  dit vond ik erg leuk om te doen. 
+  Nadat ik een storyboard had gemaakt kwam ik er al snel achter
+  dat ik nog wat extra uitdaging zocht en met een before of after aan de slag wilde gaan. 
+  Dit is uiteindelijk ook gelukt, waar ik veel van heb geleerd door ook fouten te maken. 
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/fanta_normaal.png" width="375px" alt="Fanta logo normaal">
+  <img src="readme-images/fanta_driehoek.png" width="375px" alt="Fanta logo met driehoek eronder">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Ik vond het in het begin erg lastig om een logo te kiezen wat ik wilde animeren,
+  omdat er zoveel keuze is. Ook vond ik het lastig een storyboard te maken van de animatie, 
+  omdat ik niet goed wist wat voor mij haalbaar is om te coderen. 
+  Het vol laten stromen van de letters was moeilijker dan ik had gedacht, omdat niks werkte wat ik probeerde. 
+  Dit lag voornamelijk aan de manier waarop ik elementen selecteerde. Toen ik hier wat hulp bij kreeg is het uiteindelijk gelukt. 
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/fanta_volstromen.png" width="375px" alt="Fanta logo half gevuld">
 </details>
 
 
