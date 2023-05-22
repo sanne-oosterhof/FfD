@@ -1,0 +1,274 @@
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+	font-family: 'fanta';
+	src: 
+		url('../fonts/fanta_regular_by_pependejo-dbvx61f-webfont.woff2') format('woff2'),
+    url('../fonts/fanta_regular_by_pependejo-dbvx61f-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button:not([disabled]), summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-text:#ffffff;
+	--color-background:#ff8300;
+	--color-shadow:#11246f;
+}
+
+@media (prefers-color-scheme: dark){
+	:root{
+	--color-text:#ffffff;
+	--color-background:#0e173c;
+	--color-shadow:#ff8300;
+	}
+}
+ 
+
+
+
+
+/****************/
+/*   STYLING    */
+/****************/
+body {
+  font-family: fanta, sans-serif;
+	font-size: 2em;
+  color:var(--color-text);
+  background-color:var(--color-background);
+
+	height:100dvh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(-3deg);
+	line-height: 1em;
+}
+
+h1 span{
+	-webkit-text-stroke: .03em var(--color-shadow);
+}
+
+
+
+
+
+/*****************************/
+/*   @MEDIA met @KEYFRAMES   */
+/*****************************/
+@media (prefers-reduced-motion:no-preference){
+	/* KEYFRAMES voor fade in tekst */
+	@keyframes scale-F { 
+		100% {
+			transform:scale(1.2);
+		}
+	}
+
+	@keyframes scale-A { 
+		100% {
+			transform:scale(1.1);
+		}
+	}
+
+	@keyframes scale-N { 
+		100% {
+			transform:scale(1.3);
+		}
+	}
+
+	@keyframes scale-T { 
+		100% {
+			transform:scale(1.2);
+		}
+	}
+
+	@keyframes scale-second-A { 
+		100% {
+			transform:scale(.9);
+		}
+	}
+
+	/* KEYFRAMES voor golfje */
+	@keyframes golf-animatie{
+		0% {
+			background-position: center top;
+		}
+		12.5% {
+			background-position:30% 12.5%;
+		}
+		25% {
+			background-position:70% 25%;
+		}
+		37.5% {
+			background-position:30% 37.5%;
+		}
+		50% {
+			background-position:70% 50%;
+		}
+		62.5% {
+			background-position:30% 62.5%;
+		}
+		75% {
+			background-position:70% 75%;
+		}
+		87.5% {
+			background-position:30% 87.5%;
+		}
+		100% {
+			background-position:50% 100%;
+		}
+	}
+
+	/* ANIMATIE Fade in tekst en golf */
+	body h1:hover span {
+		animation-name:	
+		golf-animatie;
+		animation-duration: 
+		1.15s,
+		5s;
+		animation-fill-mode: 
+		forwards;
+		animation-timing-function: 
+		ease, 
+		linear;
+		transform-origin: 
+		center bottom;
+	}
+
+	/* Voor fade in scale tekst */
+	body h1:hover span:nth-of-type(1){
+		animation-name:
+		scale-F,
+		golf-animatie;
+		animation-delay:
+			.15s, 
+			3.1s;
+	}
+
+	body h1:hover span:nth-of-type(2){
+		animation-name:
+		scale-A,
+		golf-animatie;
+		animation-delay:
+			.30s, 
+			3s;
+	}
+
+	body h1:hover span:nth-of-type(3){
+		animation-name:
+		scale-N,
+		golf-animatie;
+		animation-delay:
+			.45s, 
+			3s;
+	}
+
+	body h1:hover span:nth-of-type(4){
+		animation-name:
+		scale-T,
+		golf-animatie;
+		animation-delay:
+			1s, 
+			3s;
+	}
+
+	body h1:hover span:nth-of-type(5){
+		animation-name:
+		scale-second-A,
+		golf-animatie;
+		animation-delay:
+			1.15s, 
+			2.6s;
+	}
+
+	/* Voor golfje */
+	h1 span{
+		background-image: 
+			radial-gradient(
+				circle at 50% 100%,
+				var(--color-text) 45%,
+				var(--color-background) 0);
+			
+		background-clip: text;
+		-webkit-background-clip:text;
+		color:transparent;
+	
+		background-size: 200% 200%;
+		background-position: center top;
+	}
+
+	/* KEYFRAMES voor driehoek achtergrond */
+	@keyframes driehoek-achtergrond-animatie{
+		0% {
+			clip-path: polygon(72% 0, 0 0, 100% 0);
+		}
+	
+		100% {
+			clip-path: polygon(40% 30%, 0 0, 100% 0);
+			height: 3em;
+		}
+	}
+
+	/* ANIMATIE Driehoek achtergrond */
+	body h1:hover:after {
+		animation-name: driehoek-achtergrond-animatie;
+		animation-duration: 1.5s;
+		animation-delay: 1.7s;
+		animation-fill-mode: forwards;
+	}
+
+	/* Voor driehoek onder de tekst */
+	h1:after {
+		content:"";
+		position: absolute;
+	
+		width:100%;
+		height: 0%;
+		top: 85%;
+	
+		background-color: var(--color-shadow);
+		/* margin-left: .055em; */
+	}
+} 
+
+@media (min-width: 40em){
+	body {
+		font-size: 4em;
+	}
+}
+
+@media (min-width: 50em){
+	body {
+		font-size: 6em;
+	}
+}
