@@ -87,6 +87,22 @@ h1 span{
 /*   @MEDIA met @KEYFRAMES   */
 /*****************************/
 @media (prefers-reduced-motion:no-preference){
+	/* Voor golfje */
+	h1 span{
+		background-image: 
+			radial-gradient(
+				circle at 50% 100%,
+				var(--color-text) 45%,
+				var(--color-background) 0);
+			
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	
+		background-size: 200% 200%;
+		background-position: center top;
+	}
+	
 	/* KEYFRAMES voor fade in tekst */
 	@keyframes scale-F { 
 		100% {
@@ -150,26 +166,26 @@ h1 span{
 	}
 
 	/* ANIMATIE Fade in tekst en golf */
-	body h1:hover span {
+	body h1:hover span{
 		animation-name:	
-		golf-animatie;
+			golf-animatie;
 		animation-duration: 
-		1.15s,
-		5s;
+			1.15s,
+			5s;
 		animation-fill-mode: 
-		forwards;
+			forwards;
 		animation-timing-function: 
-		ease, 
-		linear;
+			ease, 
+			linear;
 		transform-origin: 
-		center bottom;
+			center bottom;
 	}
 
-	/* Voor fade in scale tekst */
+	/* Met scale erbij per letter */
 	body h1:hover span:nth-of-type(1){
 		animation-name:
-		scale-F,
-		golf-animatie;
+			scale-F,
+			golf-animatie;
 		animation-delay:
 			.15s, 
 			3.1s;
@@ -177,8 +193,8 @@ h1 span{
 
 	body h1:hover span:nth-of-type(2){
 		animation-name:
-		scale-A,
-		golf-animatie;
+			scale-A,
+			golf-animatie;
 		animation-delay:
 			.30s, 
 			3s;
@@ -186,46 +202,51 @@ h1 span{
 
 	body h1:hover span:nth-of-type(3){
 		animation-name:
-		scale-N,
-		golf-animatie;
+			scale-N,
+			golf-animatie;
+		animation-duration: 
+			1.15s,
+			5.55s;
 		animation-delay:
-			.45s, 
+			.53s, 
 			3s;
 	}
 
 	body h1:hover span:nth-of-type(4){
 		animation-name:
-		scale-T,
-		golf-animatie;
+			scale-T,
+			golf-animatie;
 		animation-delay:
 			1s, 
-			3s;
+			3.1s;
 	}
 
 	body h1:hover span:nth-of-type(5){
 		animation-name:
-		scale-second-A,
-		golf-animatie;
+			scale-second-A,
+			golf-animatie;
+		animation-duration: 
+			1.15s,
+			4.1s;
 		animation-delay:
 			1.15s, 
-			2.6s;
+			3s;
 	}
 
-	/* Voor golfje */
-	h1 span{
-		background-image: 
-			radial-gradient(
-				circle at 50% 100%,
-				var(--color-text) 45%,
-				var(--color-background) 0);
-			
-		background-clip: text;
-		-webkit-background-clip:text;
-		color:transparent;
+	/* Voor driehoek achtergrond */
+	h1:after {
+		content:"";
+		position: absolute;
 	
-		background-size: 200% 200%;
-		background-position: center top;
+		width:100.3%;
+		height: 0%;
+		top: 85%;
+	
+		background-color: var(--color-shadow);
+		transform: rotate(0.8deg);
+		margin-left: -0.06em;
 	}
+
 
 	/* KEYFRAMES voor driehoek achtergrond */
 	@keyframes driehoek-achtergrond-animatie{
@@ -246,20 +267,7 @@ h1 span{
 		animation-delay: 1.7s;
 		animation-fill-mode: forwards;
 	}
-
-	/* Voor driehoek onder de tekst */
-	h1:after {
-		content:"";
-		position: absolute;
-	
-		width:100%;
-		height: 0%;
-		top: 85%;
-	
-		background-color: var(--color-shadow);
-		/* margin-left: .055em; */
-	}
-} 
+}
 
 @media (min-width: 40em){
 	body {
