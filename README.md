@@ -82,15 +82,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je ontwerp:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/dopper1.png" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/dopper2.png" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/dopper3.png" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Hover state van de button met een bubbel effect.
+  - Doorklikken door de stappen zonder een nieuwe pagina aan te maken.
+  - Favorieten lijstje. 
+  - Dopper laten veranderen aan de hand van de keuzes die er gemaakt worden. 
+  - De dopper laten verschuiven naar de R en weer terug. 
+  - Water uit de R in de dopper laten stromen.
 </details>
 
 
