@@ -4,12 +4,20 @@
 /* FONTS */
 /*********/
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'gilroyextrabold';
+	src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+			 url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 
+}
+
+@font-face {
+	font-family: 'gilroylight';
+	src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+			 url('../fonts/gilroy-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -30,14 +38,32 @@ button:not[disabled], summary {
 
 
 
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
+	--color-text:#1a3065;
 	--color-background:#eee;
+	--color-button:#1a3065;
+	--color-button-text:#eee;
+
+	--color-dopper-polarBlue:#d1f0ed;
+	--color-dopper-tidalTeal:#008E8D;
+	--color-dopper-pacificBlue:#2A72A7;
+	--color-dopper-coralSplash:#F45758;
+	--color-dopper-seahorseLime:#D9E246;
+	--color-dopper-moodyMint:#8CB593;
+	--color-dopper-black:#1d1d1d	;
+	--color-dopper-white:#fff;
+}
+
+@media (prefers-color-scheme: dark){
+	:root{
+	--color-text:#eee;
+	--color-background:#1a3065;
+	--color-button:#eee;
+	--color-button-text:#1a3065;
+	}
 }
 
 
@@ -48,10 +74,144 @@ button:not[disabled], summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
+  font-family:gilroyextrabold, sans-serif;
+
   color:var(--color-text);
   background-color:var(--color-background);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-/* jouw code */
+main { 
+	margin-bottom: 2em;
+}
 
+main button{
+	font-size: 1.3em;
+
+	background-color: var(--color-button);
+	color: var(--color-button-text);
+
+	border: none;
+	border-radius: 4em;
+	padding: .5em 1.5em .5em 1.5em;
+}
+
+main ul{
+	list-style-type: none;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.swiper-button-prev{
+	color: var(--color-button);
+	background-color: transparent;
+}
+
+.swiper-button-next{
+	color: var(--color-button);
+	background-color: transparent;
+}
+
+
+svg{
+	width: 9em;
+}
+
+/* main::after{
+	content: "";
+	clip-path: polygon(46% 14%, 82% 20%, 100% 60%, 75% 100%, 25% 100%, 9% 73%, 3% 36%);
+	background-color: white;
+} */
+
+
+/* Kleuren voor de dop */
+#dop {
+	fill: var(--color-dopper-polarBlue);
+}
+
+#dop.polarBlue{
+ fill: var(--color-dopper-polarBlue);
+}
+
+#dop.tidalTeal{
+	fill: var(--color-dopper-tidalTeal);
+}
+
+#dop.pacificBlue{
+	fill: var(--color-dopper-pacificBlue);
+}
+
+#dop.coralSplash{
+	fill: var(--color-dopper-coralSplash);
+}
+
+#dop.seahorseLime{
+	fill: var(--color-dopper-seahorseLime);
+}
+
+#dop.moodyMint{
+	fill: var(--color-dopper-moodyMint);
+}
+
+/* Kleuren voor de cup */
+#cup {
+	fill: var(--color-dopper-white);
+}
+
+#cup.wit{
+	fill: var(--color-dopper-white);
+}
+
+#cup.zwart{
+	fill: var(--color-dopper-black);
+ }
+
+/* Kleuren voor de bottle */
+#bottle{
+	fill: var(--color-dopper-polarBlue);
+}
+
+#bottle.polarBlueBottle{
+	fill: var(--color-dopper-polarBlue);
+ }
+ 
+ #bottle.tidalTealBottle{
+	 fill: var(--color-dopper-tidalTeal);
+ }
+ 
+ #bottle.pacificBlueBottle{
+	 fill: var(--color-dopper-pacificBlue);
+ }
+ 
+ #bottle.coralSplashBottle{
+	 fill: var(--color-dopper-coralSplash);
+ }
+ 
+ #bottle.seahorseLimeBottle{
+	 fill: var(--color-dopper-seahorseLime);
+ }
+ 
+ #bottle.moodyMintBottle{
+	 fill: var(--color-dopper-moodyMint);
+ }
+
+
+
+
+
+/****************/
+/*    @MEDIA    */
+/****************/
+@media (min-width: 30em){
+	body {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	
+	}
+}

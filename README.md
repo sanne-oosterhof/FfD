@@ -17,12 +17,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text (uiteindelijk niet meer gebruikt)
   2. https://codepen.io/shooft/pen/vYVjLvy  
   3. https://bennettfeely.com/clippy/
+  4. https://www.fontsquirrel.com/tools/webfont-generator
+  5. https://codepen.io/shooft/pen/GRXMEoV
+  6. https://swiperjs.com/get-started#add-swiper-html-layout 
 
 
 
 ## Opdracht 1 plan
 
-<details open>
+<details>
   <summary>uitwerken na schetsen idee (voor week 2)</summary>
 
 
@@ -77,7 +80,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 2 plan
 
-<details>
+<details open>
   <summary>uitwerken na schetsen idee (voor week 5)</summary>
 
 
