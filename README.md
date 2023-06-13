@@ -20,6 +20,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   4. https://www.fontsquirrel.com/tools/webfont-generator
   5. https://codepen.io/shooft/pen/GRXMEoV
   6. https://swiperjs.com/get-started#add-swiper-html-layout 
+  7. https://css-tricks.com/snippets/css/complete-guide-grid/ 
 
 
 

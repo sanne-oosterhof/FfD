@@ -1,5 +1,3 @@
-/* CSS Document */
-
 /*********/
 /* FONTS */
 /*********/
@@ -70,63 +68,100 @@ button:not[disabled], summary {
 
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+html{
+	height: 100%;
+}
+
 body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
   font-family:gilroyextrabold, sans-serif;
 
   color:var(--color-text);
   background-color:var(--color-background);
 
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 }
 
 main { 
-	margin-bottom: 2em;
+	margin: 0 1em 0 1em;
+	width:100%;
+	height: 100%;
 }
 
-main button{
-	font-size: 1.3em;
+h1{
+	font-size: 2.2em;
+}
 
-	background-color: var(--color-button);
-	color: var(--color-button-text);
+h2{
+	font-size: 1.2em;
+}
 
-	border: none;
-	border-radius: 4em;
-	padding: .5em 1.5em .5em 1.5em;
+p{
+	font-weight: 100;
+}
+
+/* Extra wrapper, omdat het anders te breed werd*/
+main>div{
+	height: 100%;
+	display: grid;
+	grid-template-rows: max-content 1fr max-content;
+
+	grid-template-areas: 
+	"header"
+	"fles"
+	"opties";
+}
+
+main header{
+	grid-area: header;
+}
+
+/************************/
+/* FORMULIER MET OPTIES */
+main div>section{
+	width: 100%;
+	grid-area: opties;
+
+	justify-self: center;
+	align-self: center;
 }
 
 main ul{
 	list-style-type: none;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
+/* Links en rechts pijltjes */
 .swiper-button-prev{
+	border: none;
 	color: var(--color-button);
 	background-color: transparent;
 }
 
 .swiper-button-next{
+	border: none;
 	color: var(--color-button);
 	background-color: transparent;
 }
 
-
-svg{
-	width: 9em;
+/* wrapper van de svg dopper */
+article{
+	grid-area: fles;
+	justify-self: center;
+	align-self: center;
+	height: 80%;
 }
 
-/* main::after{
-	content: "";
-	clip-path: polygon(46% 14%, 82% 20%, 100% 60%, 75% 100%, 25% 100%, 9% 73%, 3% 36%);
-	background-color: white;
-} */
-
+svg{
+	height: 100%;
+	width: auto;
+}
 
 /* Kleuren voor de dop */
 #dop {
@@ -207,11 +242,12 @@ svg{
 /*    @MEDIA    */
 /****************/
 @media (min-width: 30em){
-	body {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
+	main>div{
+		grid-template-rows: max-content 1fr;
+		grid-template-columns: 24em 1fr;
 	
+		grid-template-areas: 
+		"header fles"
+		"opties fles";
 	}
 }
