@@ -41,7 +41,7 @@ button:not[disabled], summary {
 /*********************/
 :root {
 	--color-text:#1a3065;
-	--color-background:#eee;
+	--color-background:#c9c9c9;
 	--color-button:#1a3065;
 	--color-button-text:#eee;
 
@@ -53,6 +53,8 @@ button:not[disabled], summary {
 	--color-dopper-moodyMint:#8CB593;
 	--color-dopper-black:#1d1d1d	;
 	--color-dopper-white:#fff;
+
+	--margin-links-en-rechts: 0 1em 0 1em;
 }
 
 @media (prefers-color-scheme: dark){
@@ -88,7 +90,7 @@ body {
 }
 
 main { 
-	margin: 0 1em 0 1em;
+	margin: 0;
 	width:100%;
 	height: 100%;
 }
@@ -99,10 +101,6 @@ h1{
 
 h2{
 	font-size: 1.2em;
-}
-
-p{
-	font-weight: 100;
 }
 
 /* Extra wrapper, omdat het anders te breed werd*/
@@ -119,6 +117,7 @@ main>div{
 
 main header{
 	grid-area: header;
+	margin: var(--margin-links-en-rechts);
 }
 
 /************************/
@@ -133,8 +132,11 @@ main div>section{
 
 main ul{
 	list-style-type: none;
+	margin: var(--margin-links-en-rechts);
+}
+
+main section p{
 	margin: 0;
-	padding: 0;
 }
 
 /* Links en rechts pijltjes */

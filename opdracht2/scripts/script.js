@@ -1,4 +1,3 @@
-// JavaScript Document
 console.log("howdy");
 
 // Variabelen voor de hele dopper
