@@ -42,8 +42,10 @@ button:not[disabled], summary {
 :root {
 	--color-text:#1a3065;
 	--color-background:#c9c9c9;
-	--color-button:#1a3065;
-	--color-button-text:#eee;
+	--color-pijltjes:#1a3065;
+	--color-button:#ffea80;
+	--color-button-hover:#efcf2e;
+	--color-button-text:#1a3065;
 
 	--color-dopper-polarBlue:#d1f0ed;
 	--color-dopper-tidalTeal:#008E8D;
@@ -61,8 +63,7 @@ button:not[disabled], summary {
 	:root{
 	--color-text:#eee;
 	--color-background:#1a3065;
-	--color-button:#eee;
-	--color-button-text:#1a3065;
+	--color-pijltjes:#eee;
 	}
 }
 
@@ -122,6 +123,7 @@ main header{
 
 /************************/
 /* FORMULIER MET OPTIES */
+/************************/
 main div>section{
 	width: 100%;
 	grid-area: opties;
@@ -133,6 +135,8 @@ main div>section{
 main ul{
 	list-style-type: none;
 	margin: var(--margin-links-en-rechts);
+	margin-bottom: 2.5em;
+
 }
 
 main section p{
@@ -142,27 +146,44 @@ main section p{
 /* Links en rechts pijltjes */
 .swiper-button-prev{
 	border: none;
-	color: var(--color-button);
+	color: var(--color-pijltjes);
 	background-color: transparent;
 }
 
 .swiper-button-next{
 	border: none;
-	color: var(--color-button);
+	color: var(--color-pijltjes);
 	background-color: transparent;
 }
 
-/* wrapper van de svg dopper */
+/* Wrapper van de svg dopper */
 article{
 	grid-area: fles;
 	justify-self: center;
 	align-self: center;
-	height: 80%;
+	height: 85%;
 }
 
 svg{
 	height: 100%;
 	width: auto;
+}
+
+/* Voor het opslaan van de dopper stap 4/4 */
+form button{
+	background-color: var(--color-button);
+	color: var(--color-button-text);
+	font-size: 1em;
+	font-weight: 600;
+	padding: .5em 1em .5em 1em;
+	border-radius: .7em;
+	border: none;
+}
+
+form button:hover{
+	transition: .8s;
+	border-radius: 1.5em;
+	background-color: var(--color-button-hover);
 }
 
 /* Kleuren voor de dop */
