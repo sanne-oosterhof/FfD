@@ -28,7 +28,7 @@ var moodyMintBottle = document.querySelector("[value='moodyMintBottle']");
 // Variabele voor carousel
 var carouselOpties = {
   direction: 'horizontal',
-  loop: 'true',
+  loop: false,
   speed: 300,
   cssMode: true,
 

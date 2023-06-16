@@ -105,7 +105,7 @@ h2{
 }
 
 /* Extra wrapper, omdat het anders te breed werd*/
-main>div{
+div:nth-of-type(1){  
 	height: 100%;
 	display: grid;
 	grid-template-rows: max-content 1fr max-content;
@@ -116,7 +116,7 @@ main>div{
 	"opties";
 }
 
-main header{
+header{
 	grid-area: header;
 	margin: var(--margin-links-en-rechts);
 }
@@ -124,7 +124,7 @@ main header{
 /************************/
 /* FORMULIER MET OPTIES */
 /************************/
-main div>section{
+div>section{
 	width: 100%;
 	grid-area: opties;
 
@@ -132,15 +132,46 @@ main div>section{
 	align-self: center;
 }
 
-main ul{
+ul{
 	list-style-type: none;
-	margin: var(--margin-links-en-rechts);
+	/* margin: var(--margin-links-en-rechts); */
 	margin-bottom: 2.5em;
-
 }
 
-main section p{
+section div{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap:1em 1em;
+}
+
+section p{
 	margin: 0;
+}
+
+/* Om de opslaan sectie links en rechts ruimte te geven */
+form>section:last-of-type{
+	padding: var(--margin-links-en-rechts);
+}
+
+/* Voor de afmetingen van de svg's in het formulier */
+ul li label svg{
+	width: 2em;
+}
+
+label input:checked + svg  {
+	filter:drop-shadow(0 0 .2em var(--color-dopper-black))
+}
+
+/* Het verbergen van de radio buttons */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* Links en rechts pijltjes */
@@ -185,6 +216,67 @@ form button:hover{
 	border-radius: 1.5em;
 	background-color: var(--color-button-hover);
 }
+
+/* doppen in form een kleur geven */
+form section:nth-of-type(1) li:nth-of-type(1) label svg{
+	fill: var(--color-dopper-polarBlue);
+}
+
+form section:nth-of-type(1) li:nth-of-type(2) label svg{
+	fill: var(--color-dopper-tidalTeal);
+}
+
+form section:nth-of-type(1) li:nth-of-type(3) label svg{
+	fill: var(--color-dopper-pacificBlue);
+}
+
+form section:nth-of-type(1) li:nth-of-type(4) label svg{
+	fill: var(--color-dopper-coralSplash);
+}
+
+form section:nth-of-type(1) li:nth-of-type(5) label svg{
+	fill: var(--color-dopper-seahorseLime);
+}
+
+form section:nth-of-type(1) li:nth-of-type(6) label svg{
+	fill: var(--color-dopper-moodyMint);
+}
+
+/* Cup in form een kleur geven */
+form section:nth-of-type(2) li:nth-of-type(1) label svg{
+	fill: var(--color-dopper-white);
+}
+
+form section:nth-of-type(2) li:nth-of-type(2) label svg{
+	fill: var(--color-dopper-black);
+}
+
+/* Bottle in form een kleur geven */
+form section:nth-of-type(3) li:nth-of-type(1) label svg{
+	fill: var(--color-dopper-polarBlue);
+}
+
+form section:nth-of-type(3) li:nth-of-type(2) label svg{
+	fill: var(--color-dopper-tidalTeal);
+}
+
+form section:nth-of-type(3) li:nth-of-type(3) label svg{
+	fill: var(--color-dopper-pacificBlue);
+}
+
+form section:nth-of-type(3) li:nth-of-type(4) label svg{
+	fill: var(--color-dopper-coralSplash);
+}
+
+form section:nth-of-type(3) li:nth-of-type(5) label svg{
+	fill: var(--color-dopper-seahorseLime);
+}
+
+form section:nth-of-type(3) li:nth-of-type(6) label svg{
+	fill: var(--color-dopper-moodyMint);
+}
+
+
 
 /* Kleuren voor de dop */
 #dop {
@@ -265,7 +357,7 @@ form button:hover{
 /*    @MEDIA    */
 /****************/
 @media (min-width: 30em){
-	main>div{
+  div:nth-of-type(1){
 		grid-template-rows: max-content 1fr;
 		grid-template-columns: 24em 1fr;
 	
