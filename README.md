@@ -25,7 +25,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 1 plan
 
-<details>
+<details open>
   <summary>uitwerken na schetsen idee (voor week 2)</summary>
 
 
@@ -115,7 +115,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 2 test
 
-<details>
+<details open>
   <summary>uitwerken na testen (week 7)</summary>
 
   Neem minimaal 5 bevindingen op:
@@ -146,7 +146,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 2 reflectie
 
-<details>
+<details open>
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):

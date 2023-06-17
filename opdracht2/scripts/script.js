@@ -43,6 +43,34 @@ var carouselOpties = {
   }
 };
 
+// WISHLIST 
+// Bron codepen animaties - oefening 3 shopping cart
+var favorietenButton = document.querySelectorAll("button.favorieten")
+
+for (let i = 0; i < favorietenButton.length; i++) {
+  favorietenButton[i].addEventListener("click", addToWishlist);
+}
+
+function addToWishlist() {  
+  let wishlistAmount = document.querySelector(".wishlist span");
+  let currentAmount = wishlistAmount.innerHTML;
+  currentAmount = parseInt(currentAmount);
+  let newAmount = currentAmount + 1;
+  wishlistAmount.innerHTML = newAmount;
+
+  wishlistAmount.classList.add("update");
+
+  setTimeout(function(){
+    wishlistAmount.classList.remove("update");
+  }, 400);
+
+  // wishlistAmount.addEventListener("animationend", () => {
+  //   wishlistAmount.classList.remove("update");
+  // });
+}
+
+
+
 // Voor de dop
 polarBlueDop.addEventListener("change", maakDopPolarBlue);
 tidalTealDop.addEventListener("change", maakDopTidalTeal);
