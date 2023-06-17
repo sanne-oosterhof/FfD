@@ -14,13 +14,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text (uiteindelijk niet meer gebruikt)
-  2. https://codepen.io/shooft/pen/vYVjLvy  
-  3. https://bennettfeely.com/clippy/
-  4. https://www.fontsquirrel.com/tools/webfont-generator
-  5. https://codepen.io/shooft/pen/GRXMEoV
-  6. https://swiperjs.com/get-started#add-swiper-html-layout 
-  7. https://css-tricks.com/snippets/css/complete-guide-grid/ 
+  1. https://codepen.io/shooft/pen/vYVjLvy  
+  2. https://bennettfeely.com/clippy/
+  3. https://www.fontsquirrel.com/tools/webfont-generator
+  4. https://codepen.io/shooft/pen/GRXMEoV
+  5. https://swiperjs.com/get-started#add-swiper-html-layout 
+  6. https://css-tricks.com/snippets/css/complete-guide-grid/ 
 
 
 
@@ -37,8 +36,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
   - Het vergroten van letters
-  - De kenmerkende blauwe driehoek van Fanta onder de tekst laten verschijnen
+  - De kenmerkende driehoek van Fanta onder de tekst laten verschijnen
   - De letters vol laten stromen
+  - Een mooi dark/light schema ontwerpen
  
 </details>
 
@@ -55,24 +55,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Voor mij waren keyframes nog helemaal nieuw, 
-  hier heb ik dus veel van geleerd. 
-  Ook heb ik voor het eerst mijn eigen animatie gecodeerd, 
-  dit vond ik erg leuk om te doen. 
-  Nadat ik een storyboard had gemaakt kwam ik er al snel achter
-  dat ik nog wat extra uitdaging zocht en met een before of after aan de slag wilde gaan. 
-  Dit is uiteindelijk ook gelukt, waar ik veel van heb geleerd door ook fouten te maken. 
+  Voor mij waren keyframes nog helemaal nieuw, hier heb ik dus veel van geleerd. 
+  Keyframes gebruiken was eigenlijk makkelijker dan ik had gedacht, het is meer werk geweest voor mij om alles goed op elkaar af te stemmen.
+  Denk bijvoorbeeld aan het vol laten stromen van de letters, de laatste A is eerder vol dan de andere letters. 
+  Dit was niet moeilijk om te doen, maar vooral veel uitproberen en testen. 
+  Zo heb ik uiteindelijk alle letters goed op elkaar kunnen afstemmen met het volstromen, dit ging best goed. 
+  Ook vond ik het erg leuk om mijn eerste eigen animatie te maken en ontwerpen.
+  Voordat ik begon met coderen voor opdracht 1 wist ik niet dat mijn animatie eigenlijk uit 3 losse animaties bestaat.
+  Wat ik hiervan heb geleerd is om vooraf al beter te bepalen wat samen kan en wat los van elkaar komt te staan. 
+  Nadat ik een storyboard had gemaakt kwam ik er al snel achter dat ik nog wat extra uitdaging zocht en met een before of after aan de slag wilde gaan. 
+  Uiteindelijk heb ik een after gebruikt, waar ik voorheen nog nooit mee gewerkt had. 
+  Vooraf dacht ik dat het veel moeilijker zou zijn om met een before/after te werken, maar dit vond ik erg meevallen. 
+  Ik ben erg blij met het eindresultaat en had niet gedacht dat het toch zo mooi zou worden.
 
   <img src="readme-images/fanta_normaal.png" width="375px" alt="Fanta logo normaal">
   <img src="readme-images/fanta_driehoek.png" width="375px" alt="Fanta logo met driehoek eronder">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Ik vond het in het begin erg lastig om een logo te kiezen wat ik wilde animeren,
-  omdat er zoveel keuze is. Ook vond ik het lastig een storyboard te maken van de animatie, 
-  omdat ik niet goed wist wat voor mij haalbaar is om te coderen. 
+  Ik vond het in het begin erg lastig om een logo te kiezen wat ik wilde animeren, omdat er zoveel keuze is. 
+  Op Google heb ik onwijs veel logo's opgezocht en gekeken hoe ik deze zou kunnen animeren. 
+  Ik heb op een gegeven moment de knoop doorgehakt om Fanta te kiezen, omdat ik al veel tijd kwijt was met het kiezen van een logo. 
+  Ook vond ik het lastig een storyboard te maken van de animatie, omdat ik niet goed wist wat voor mij haalbaar is om te coderen. 
+  Uiteindelijk heb ik maar een storyboard gemaakt wat mij leuk leek en tijdens het coderen gekeken wat haalbaar was en wat niet.
+  Als ik naar het eindresultaat kijk is eigenlijk alles gelukt wat ik wilde doen en heb ik er zelfs nog een schepje bovenop kunnen doen.
   Het vol laten stromen van de letters was moeilijker dan ik had gedacht, omdat niks werkte wat ik probeerde. 
-  Dit lag voornamelijk aan de manier waarop ik elementen selecteerde. Toen ik hier wat hulp bij kreeg is het uiteindelijk gelukt. 
+  Ik had veel voorbeelden opgezocht en dingen uitgeprobeerd, omdat het nog steeds niet werkte werd ik soms best wel gefrustreerd. 
+  Dit lag voornamelijk aan de manier waarop ik elementen selecteerde. Toen ik hier hulp bij kreeg is het uiteindelijk gelukt. 
 
   <img src="readme-images/fanta_volstromen.png" width="375px" alt="Fanta logo half gevuld">
 </details>
@@ -99,6 +108,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Dopper laten veranderen aan de hand van de keuzes die er gemaakt worden. 
   - De dopper laten verschuiven naar de R en weer terug. 
   - Water uit de R in de dopper laten stromen.
+  - Kleuren van een SVG met code veranderen.
 </details>
 
 

@@ -55,7 +55,7 @@ button:not([disabled]), summary {
 /****************/
 body {
   font-family: fanta, sans-serif;
-	font-size: 2em;
+	font-size: 3em;
   color:var(--color-text);
   background-color:var(--color-background);
 
