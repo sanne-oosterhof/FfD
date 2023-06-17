@@ -45,30 +45,27 @@ var carouselOpties = {
 
 // WISHLIST 
 // Bron codepen animaties - oefening 3 shopping cart
-var favorietenButton = document.querySelectorAll("button.favorieten")
 
-for (let i = 0; i < favorietenButton.length; i++) {
-  favorietenButton[i].addEventListener("click", addToWishlist);
+// Hartje vullen
+var favoButton = document.querySelectorAll("button.favorieten");
+
+for (let i = 0; i < favoButton.length; i++) {
+  favoButton[i].addEventListener("click", voegToeAanWishlist);
 }
 
-function addToWishlist() {  
+function voegToeAanWishlist() {  
   let wishlistAmount = document.querySelector(".wishlist span");
   let currentAmount = wishlistAmount.innerHTML;
   currentAmount = parseInt(currentAmount);
   let newAmount = currentAmount + 1;
   wishlistAmount.innerHTML = newAmount;
-
-  wishlistAmount.classList.add("update");
-
+  
+  wishlistAmount.classList.add("updated");
+  
   setTimeout(function(){
-    wishlistAmount.classList.remove("update");
-  }, 400);
-
-  // wishlistAmount.addEventListener("animationend", () => {
-  //   wishlistAmount.classList.remove("update");
-  // });
+  wishlistAmount.classList.remove("updated");
+  }, 400);  
 }
-
 
 
 // Voor de dop
