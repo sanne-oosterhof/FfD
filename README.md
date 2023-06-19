@@ -120,18 +120,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Neem minimaal 5 bevindingen op:
 
-
-
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
+  De grootte op desktop van de doppen moet groter en staat nog niet goed gecentreerd. 
+  
+  <img src="readme-images/bevinding1.png" width="375px" alt="bevinding 1">
+   
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Het grid klopt ook niet op desktop, staat deels door elkaar.
+
+  <img src="readme-images/bevinding2.png" width="375px" alt="bevinding 2">
+
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
@@ -139,7 +142,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 3:
-  ...
+  Cupkleur kan op desktop niet aangepast worden.
+
+  <img src="readme-images/bevinding3.png" width="375px" alt="bevinding 3">
+
+  #### oplossing:
+  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+
+
+
+  ### Bevinding 4:
+  Het toevoegen aan favorieten doet het soms wel soms niet, soms herlaad de pagina als je op de toevoegen button klikt. Als je eventjes wacht bij stap 4/4 werkt het vaak wel (hier heb ik een schermopname van). Als de body op mobiel geladen is dan doet de interactie het wel.
+
+  <img src="readme-images/bevinding4.png" width="375px" alt="bevinding 4">
+
+  
+  #### oplossing:
+  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+
+
+  ### Bevinding 5:
+  1 kleur coral splash voor bottle doet het niet. 
+
+  <img src="readme-images/bevinding5.png" width="375px" alt="bevinding 5">
+
+  #### oplossing:
+  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+
+
+  ### Bevinding 6:
+  Hartje op desktop groter maken. 
+
+  <img src="readme-images/bevinding6.png" width="375px" alt="bevinding 6">
+
+  #### oplossing:
+  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+
 </details>
 
 
