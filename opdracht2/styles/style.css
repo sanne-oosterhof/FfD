@@ -46,6 +46,7 @@ button:not[disabled], summary {
 	--color-button:#ffea80;
 	--color-button-hover:#efcf2e;
 	--color-button-text:#1a3065;
+	--color-select-state: #1d1d1d;
 
 	--color-dopper-polarBlue:#d1f0ed;
 	--color-dopper-tidalTeal:#008E8D;
@@ -53,7 +54,7 @@ button:not[disabled], summary {
 	--color-dopper-coralSplash:#F45758;
 	--color-dopper-seahorseLime:#D9E246;
 	--color-dopper-moodyMint:#8CB593;
-	--color-dopper-black:#1d1d1d	;
+	--color-dopper-black:#1d1d1d;
 	--color-dopper-white:#fff;
 
 	--margin-links-en-rechts: 0 1em 0 1em;
@@ -64,6 +65,7 @@ button:not[disabled], summary {
 	--color-text:#eee;
 	--color-background:#1a3065;
 	--color-pijltjes:#eee;
+	--color-select-state: #8a8787;
 	}
 }
 
@@ -102,6 +104,7 @@ h1{
 
 h2{
 	font-size: 1.2em;
+	margin: 0 0 0 1em; 
 }
 
 /* Extra wrapper, omdat het anders te breed werd*/
@@ -190,8 +193,10 @@ div>section{
 
 ul{
 	list-style-type: none;
-	/* margin: var(--margin-links-en-rechts); */
-	margin-bottom: 2.5em;
+}
+
+ul div{
+	margin: 1em 0 0 1em; 
 }
 
 section div{
@@ -216,7 +221,7 @@ ul li label svg{
 }
 
 label input:checked + svg  {
-	filter:drop-shadow(0 0 .2em var(--color-dopper-black))
+	filter:drop-shadow(0 0 .3em var(--color-select-state))
 }
 
 /* Het verbergen van de radio buttons */
@@ -265,6 +270,7 @@ form button{
 	padding: .5em 1em .5em 1em;
 	border-radius: .7em;
 	border: none;
+	margin: 1em 0 0 1em; 
 }
 
 form button:hover{
@@ -412,13 +418,37 @@ form section:nth-of-type(3) li:nth-of-type(6) label svg{
 /****************/
 /*    @MEDIA    */
 /****************/
-@media (min-width: 30em){
+@media (min-width: 40em){
+	/* Hartje groter maken op desktop */
+	header nav a { 
+		font-size:1.7em;
+	}
+
+	/* grid aanpassen van header, fles en opties op desktop */
   div:nth-of-type(1){
 		grid-template-rows: max-content 1fr;
-		grid-template-columns: 24em 1fr;
+		grid-template-columns: .7fr 1.3fr;
 	
 		grid-template-areas: 
 		"header fles"
 		"opties fles";
+	}
+
+	/* Om de opties margin te geven */
+	h2{
+		margin: 0 1.5em 1.7em; 
+	}
+
+	ul div{
+		margin: 0 0 5em 2em; 
+	}
+
+	form section button{
+		margin: 0 0 0 2em; 
+	}
+
+	/* svg opties groter maken op desktop */
+	ul li label svg{
+		width: 3em;
 	}
 }

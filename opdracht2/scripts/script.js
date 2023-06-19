@@ -189,7 +189,7 @@ function maakBottleCoralSplash(){
   deBottle.classList.remove("pacificBlueBottle");
   deBottle.classList.remove("seahorseLimeBottle");
   deBottle.classList.remove("moodyMintBottle");
-  deBottlep.classList.add("coralSplashBottle");
+  deBottle.classList.add("coralSplashBottle");
 }
 
 function maakBottleSeahorseLime(){
