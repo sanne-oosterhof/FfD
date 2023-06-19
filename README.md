@@ -121,7 +121,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Neem minimaal 5 bevindingen op:
 
   ### Bevinding 1:
-  De grootte op desktop van de doppen moet groter en staat nog niet goed gecentreerd. 
+  De grootte op desktop van de doppen moet groter en staat nog niet goed gecentreerd. Dit komt mede doordat het grid nog niet klopt op desktop (bevinding 2). 
+  Ik zal proberen de doppen op desktop groter te maken, ze zijn nu inderdaad wel klein. 
   
   <img src="readme-images/bevinding1.png" width="375px" alt="bevinding 1">
    
@@ -131,7 +132,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 2:
-  Het grid klopt ook niet op desktop, staat deels door elkaar.
+  Het grid klopt niet op desktop, de opties staan deels door elkaar. Dit komt denk ik omdat ik begonnen ben met het ontwerpen voor mobiel. 
+  Daardoor ben ik later begonnen met desktop en heb ik nog niet alles kunnen aanpassen. Ik wil dit gaan oplossen door het grid minder breed te maken, 
+  zodat hopelijk alle opties in een oogopslag zichtbaar zijn.
 
   <img src="readme-images/bevinding2.png" width="375px" alt="bevinding 2">
 
@@ -142,7 +145,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 3:
-  Cupkleur kan op desktop niet aangepast worden.
+  Cupkleur kan op desktop niet aangepast worden. Dit komt eigenlijk door het probleem met het grid (bevinding 2). 
+  Hierdoor staat momenteel alleen de witte (default) kleur cup bij de opties, omdat de zwarte is opgeschoven naar optie 3/4. 
+  Ook dit hoop ik samen met bevinding 2 in een keer te kunnen oplossen, zodat het grid klopt en alle opties klikbaar zijn. 
 
   <img src="readme-images/bevinding3.png" width="375px" alt="bevinding 3">
 
@@ -152,7 +157,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 4:
-  Het toevoegen aan favorieten doet het soms wel soms niet, soms herlaad de pagina als je op de toevoegen button klikt. Als je eventjes wacht bij stap 4/4 werkt het vaak wel (hier heb ik een schermopname van). Als de body op mobiel geladen is dan doet de interactie het wel.
+  Het toevoegen aan favorieten doet het soms wel soms niet, soms herlaad de pagina als je op de toevoegen button klikt. 
+  Als je eventjes wacht bij stap 4/4 werkt het vaak wel (hier heb ik een schermopname van), zodra de body op mobiel geladen is. 
+  Ook werkt de animatie niet dat het bolletje met het aantal groter wordt, zodra er iets wordt toegevoegd. 
+  Voor het testen was ik ervan op de hoogte dat het toevoegen aan favorieten niet optimaal werkt. 
+  Ik heb er op zaterdag al uren aan besteed, maar kom er gewoon niet achter waarom het niet werkt. 
+  Ik zal proberen er nogmaals naar te kijken en het misschien op te lossen.
 
   <img src="readme-images/bevinding4.png" width="375px" alt="bevinding 4">
 
@@ -162,7 +172,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 5:
-  1 kleur coral splash voor bottle doet het niet. 
+  De kleur coral splash voor bottle doet het niet. Ook van deze bevinding was ik voor het testen al op de hoogte.
+  Ik heb alle namen overal meerdere malen gecontroleerd en ik snap niet waar dit probleem vandaan komt. 
+  Ik zal nog een keer alles doornemen, zodat ik het hopelijk kan fixen. 
 
   <img src="readme-images/bevinding5.png" width="375px" alt="bevinding 5">
 
@@ -171,7 +183,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 6:
-  Hartje op desktop groter maken. 
+  Hartje op desktop groter maken. Ik kreeg te horen van Leon (mijn testpersoon uit project interaction) dat hij het hartje te klein vindt op desktop.
+  Ik denk dat dit me wel moet lukken om aan te passen, ook hier zal ik mijn uiterste best voor doen. 
 
   <img src="readme-images/bevinding6.png" width="375px" alt="bevinding 6">
 
