@@ -28,7 +28,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 1 plan
 
-<details open>
+<details>
   <summary>uitwerken na schetsen idee (voor week 2)</summary>
 
 
@@ -49,7 +49,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Opdracht 1 reflectie
 
-<details open>
+<details>
   <summary>uitwerken bij afronden opdracht (voor week 4)</summary>
 
 
@@ -227,17 +227,46 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/oplossing6_2.png" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/uitkomst1.png" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/uitkomst2.png" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/uitkomst3.png" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Wat als eerste best goed ging is het maken van een svg dopper in illustrator en de kleuren hiervan vervolgens aanpassen met code.
+  Ook vind ik het leuk dat ik dit heb kunnen uitleggen aan een medestudent. 
+  Voor mezelf had ik ook een stappenplan opgesteld, zodat ik het niet meer zal vergeten en eventueel later nog eens kan gebruiken.
+  Daarnaast heb ik geleerd hoe ik de swiper heb kunnen toevoegen en begrijp ik al iets beter alle code die op de website wordt meegegeven.
+  Verder heb ik ook geleerd aan de hand van een codepen van fed hoe een hartje een getal kan hebben wat opteld. 
+  Dit leek mij erg lastig vooraf, maar het viel redelijk mee en is me zelfstandig (bijna) gelukt om werkend te krijgen.
+  Dit is iets wat op vele andere plekken ook toegepast kan worden, zoals in een profiel of winkelmand. 
+  Daarom vind ik het erg leuk dat ik nu een beter beeld heb gekregen hoe het werkt. 
+  Wat ik verder nog heb geleerd is om soms eventjes rustig naar mijn code te kijken om te zien waar de fout vandaan komt. 
+  Als ik iets heb gesloopt baal ik daar vaak enorm van en wil ik het zo snel mogelijk weer oplossen. 
+  Maar soms kan ik dus beter even rustig mijn code doornemen om te zien wat de oorzaak is. 
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+
+  <img src="readme-images/ging_goed1.png" width="375px" alt="ging goed">
+  <img src="readme-images/ging_goed2.png" width="375px" alt="ging goed">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Vooraf had ik best wel veel plannen om met deze opdracht te gaan doen. Dit is helaas niet allemaal gelukt.
+  Zo heb ik geen bubbel effect gemaakt voor de button en de fles niet vol laten stromen met water. 
+  Beide heb ik niet kunnen proberen vanwege tijd tekort, maar het was mij misschien wel gelukt als ik kijk naar opdracht 1.
+  Wat niet is gelukt is om het toevoegen aan favorieten helemaal goed werkend te krijgen, hier baal ik erg van. 
+  Ik heb er veel tijd aan besteed en echt mijn best ervoor gedaan. Ik snap dan ook niet waardoor het soms wel en soms niet werkt. 
+  Wel ben ik blij dat ik via de schermopname op mijn telefoon kan laten zien dat het wel heeft gewerkt.    
+  Ook vind ik het jammer dat de keyframe met de animatie voor het toevoegen aan favorieten niet werkt.
+  Ik snap niet hoe dit komt, omdat ik ook alles dubbel heb gecheckt met de codepen. 
+  Als laatste vind ik het jammer dat ik de positie van de opties niet helemaal perfect heb kunnen krijgen.
+  Ik ben nogal perfectionistisch en vind het op desktop momenteel niet op zijn mooist. 
+  Hier heb ik ook van alles voor geprobeerd, maar niks heeft dus geholpen. 
+  Misschien is dit zo op te lossen en misschien ook niet, maar ik heb er wel mijn best voor gedaan.
+  Ik had graag meer aandacht willen besteden aan de light modus, deze vind ik niet heel mooi. 
+  Ik werk zelf altijd in dark modus, vandaar dat ik deze wel mooier heb kunnen maken. 
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/oplossing4_1.png" width="375px" alt="niet gelukt">
+  <img src="readme-images/oplossing5_1.png" width="375px" alt="niet gelukt">
 </details>
