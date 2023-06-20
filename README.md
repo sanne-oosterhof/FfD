@@ -130,8 +130,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/bevinding1.png" width="375px" alt="bevinding 1">
    
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik heb het opgelost door in de @media een extra regel code toe te voegen, zodat de svg's op desktop groter worden, namelijk 3em ipv 2em.
+  Dit was makkelijk om op te lossen, door ervoor te zorgen dat ik de juiste svg's geselecteerd had. Het goed centreren is niet helemaal gelukt.
+  Omdat de bottles van de dopper zoveel hoogte in nemen, staan alle opties op desktop aan de hoge kant. Dit zou ik denk ik oplossen door het grid van de 
+  bottles aan te passen naar 3 breed, alleen heb ik daar nu helaas de tijd niet meer voor. 
+ 
+  <img src="readme-images/oplossing1_1.png" width="375px" alt="code oplossing 1">
+  <img src="readme-images/oplossing1_2.png" width="375px" alt="oplossing 1">
 
 
   ### Bevinding 2:
@@ -143,8 +148,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Na veel zoeken en uitproberen ben ik erachter gekomen waar de fout zat. Het grid had ik aangepast in de @media, maar had een vaste breedte meegekregen.
+  Hierdoor was hij iets van 24em breed en de dopper 1fr. Dit heb ik aangepast naar fr, zodat de opties nu niet meer door elkaar lopen en het grid weer klopt. 
 
+  <img src="readme-images/oplossing2_1.png" width="375px" alt="code oplossing 2">
+  <img src="readme-images/oplossing2_2.png" width="375px" alt="oplossing 2">
 
 
   ### Bevinding 3:
@@ -155,8 +163,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/bevinding3.png" width="375px" alt="bevinding 3">
 
   #### oplossing:
+  Dit heb ik opgelost met dezelfde code als bij oplossing 2 te zien is. Hiermee werden 2 vliegen in 1 klap opgelost. 
+  Op de foto hieronder is te zien dat de cupkleur nu dus weer aangepast kan worden naar zwart. 
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
+  <img src="readme-images/oplossing3_1.png" width="375px" alt="oplossing 3">
 
 
   ### Bevinding 4:
@@ -171,7 +182,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb alles gecontroleerd en snap echt niet waar de fout vandaan komt. Misschien is het iets heel simpels wat ik fout doe, maar misschien ook niet.
+  Ik heb in ieder geval een schermopname op mijn telefoon, waarop te zien is dat het wel werkt. Maar op mijn laptop werkt het weer niet. 
+  Op de afbeelding van de code is te zien waar ik denk dat de fout zit. Alleen weet ik niet wat er fout aan is en heb ik alles vaak nagelopen. 
+  
+  <img src="readme-images/oplossing4_1.png" width="375px" alt="probleem 4">
 
 
   ### Bevinding 5:
@@ -182,7 +197,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/bevinding5.png" width="375px" alt="bevinding 5">
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb heel erg vaak over mijn eigen fout heen gekeken. Ik wist dat ik coral vaak spelde als colar, maar dat was nu de fout niet.
+  In mijn javascript code stond een typefout, namelijk coralp ipv coral. Na 5 keer alles doorgenomen te hebben, zag ik eindelijk de fout.
+  Zoals op de afbeelding te zien is, kan de bottle kleur nu dus weer aangepast worden naar coral.
+
+  <img src="readme-images/oplossing5_1.png" width="375px" alt="oplossing 5">
 
 
   ### Bevinding 6:
@@ -192,7 +211,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/bevinding6.png" width="375px" alt="bevinding 6">
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Deze bevinding heb ik best makkelijk kunnen oplossen, simpelweg in de @media extra code toegevoegd zodat het hartje groter is op desktop.
+  Op de tweede afbeelding is te zien dat het hartje inderdaad nu beter zichtbaar is. 
+
+  <img src="readme-images/oplossing6_1.png" width="375px" alt="code oplossing 6">
+  <img src="readme-images/oplossing6_2.png" width="375px" alt="oplossing 6">
 
 </details>
 
