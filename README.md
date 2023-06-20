@@ -165,7 +165,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### oplossing:
   Dit heb ik opgelost met dezelfde code als bij oplossing 2 te zien is. Hiermee werden 2 vliegen in 1 klap opgelost. 
   Op de foto hieronder is te zien dat de cupkleur nu dus weer aangepast kan worden naar zwart. 
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
   <img src="readme-images/oplossing3_1.png" width="375px" alt="oplossing 3">
 
