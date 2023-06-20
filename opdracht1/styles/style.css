@@ -1,6 +1,7 @@
 /*********/
 /* FONTS */
 /*********/
+/* Bron voor omzetten naar woff2 en woff: font squirrel */
 @font-face {
 	font-family: 'fanta';
 	src: 
@@ -88,6 +89,7 @@ h1 span{
 /*****************************/
 @media (prefers-reduced-motion:no-preference){
 	/* Voor golfje */
+	/* Bron: codepen golfje voor sanne */
 	h1 span{
 		background-image: 
 			radial-gradient(
@@ -249,6 +251,7 @@ h1 span{
 
 
 	/* KEYFRAMES voor driehoek achtergrond */
+	/* Bron: clippy */
 	@keyframes driehoek-achtergrond-animatie{
 		0% {
 			clip-path: polygon(72% 0, 0 0, 100% 0);

@@ -26,6 +26,7 @@ var seahorseLimeBottle = document.querySelector("[value='seahorseLimeBottle']");
 var moodyMintBottle = document.querySelector("[value='moodyMintBottle']");
 
 // Variabele voor carousel
+// Bron: swiperjs */
 var carouselOpties = {
   direction: 'horizontal',
   loop: false,
@@ -44,9 +45,7 @@ var carouselOpties = {
 };
 
 // WISHLIST 
-// Bron codepen animaties - oefening 3 shopping cart
-
-// Hartje vullen
+// Bron: codepen animaties - oefening 3 shopping cart
 var favoButton = document.querySelectorAll("button.favorieten");
 
 for (let i = 0; i < favoButton.length; i++) {
@@ -68,6 +67,10 @@ function voegToeAanWishlist() {
 }
 
 
+
+
+
+// EVENTLISTENERS 
 // Voor de dop
 polarBlueDop.addEventListener("change", maakDopPolarBlue);
 tidalTealDop.addEventListener("change", maakDopTidalTeal);
@@ -89,7 +92,11 @@ seahorseLimeBottle.addEventListener("change", maakBottleSeahorseLime);
 moodyMintBottle.addEventListener("change", maakBottleMoodyMint);
 
 
-// Functies voor de dop
+
+
+
+// FUNCTIONS 
+// voor de dop
 function maakDopPolarBlue() {
   deDop.classList.remove("tidalTeal");
   deDop.classList.remove("pacificBlue");
@@ -144,7 +151,7 @@ function maakDopMoodyMint(){
   deDop.classList.add("moodyMint");
 }
 
-// Functies voor de cup
+// Voor de cup
 function maakCupWit() {
   deCup.classList.remove("zwart");
   deCup.classList.add("wit");
@@ -155,7 +162,7 @@ function maakCupZwart(){
   deCup.classList.add("zwart");
 }
 
-// Functies voor de bottle
+// Voor de bottle
 function maakBottlePolarBlue() {
   deBottle.classList.remove("tidalTealBottle");
   deBottle.classList.remove("pacificBlueBottle");

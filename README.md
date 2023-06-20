@@ -17,9 +17,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. https://codepen.io/shooft/pen/vYVjLvy  
   2. https://bennettfeely.com/clippy/
   3. https://www.fontsquirrel.com/tools/webfont-generator
-  4. https://codepen.io/shooft/pen/GRXMEoV
-  5. https://swiperjs.com/get-started#add-swiper-html-layout 
-  6. https://css-tricks.com/snippets/css/complete-guide-grid/ 
+  4. https://swiperjs.com/get-started 
+  5. https://codepen.io/shooft/pen/GRXMEoV
+  6. https://swiperjs.com/get-started#add-swiper-html-layout 
+  7. https://css-tricks.com/snippets/css/complete-guide-grid/ 
+  8. https://codepen.io/shooft/pen/rNdoWQZ 
+  9. https://emojiterra.com/fr/sueurs-froides/ 
 
 
 

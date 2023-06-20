@@ -1,6 +1,7 @@
 /*********/
 /* FONTS */
 /*********/
+/* Bron voor omzetten naar woff2 en woff: font squirrel */
 @font-face {
 	font-family: 'gilroyextrabold';
 	src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
@@ -104,10 +105,11 @@ h1{
 
 h2{
 	font-size: 1.2em;
-	margin: 0 0 0 1em; 
+	margin: 0 0 0 .7em; 
 }
 
-/* Extra wrapper, omdat het anders te breed werd*/
+/* Extra wrapper, omdat het anders te breed werd en grid*/
+/* Bron: css tricks */
 div:nth-of-type(1){  
 	height: 100%;
 	display: grid;
@@ -138,12 +140,15 @@ header{
 /**************************/
 /*     NAV / WISHLIST     */
 /**************************/
+/* Bron: codepen animaties - oefening 3 shopping cart*/
+/* Voor het hartje van de wishlist */
 header nav a { 
   font-size:1.5em;
   line-height:1em;
   text-decoration:none;
 }
 
+/* Voor het aantal in de wishlist */
 header nav a span {
 	margin: -1em 0 0 -1em;
  
@@ -157,8 +162,8 @@ header nav a span {
   color:var(--color-button-text);
 }
 
-
 /* WERKT NIET */
+/* Animatie om het aantal groter te laten worden, zodra er een dopper aan favorieten wordt toegevoegd */
 header nav a span.updated{
   animation-name: updated;
   animation-duration:.2s;
@@ -180,9 +185,10 @@ header nav a span.updated{
 
 
 
-/************************/
-/* FORMULIER MET OPTIES */
-/************************/
+
+/*****************/
+/*   FORMULIER   */
+/*****************/
 div>section{
 	width: 100%;
 	grid-area: opties;
@@ -191,14 +197,7 @@ div>section{
 	align-self: center;
 }
 
-ul{
-	list-style-type: none;
-}
-
-ul div{
-	margin: 1em 0 0 1em; 
-}
-
+/* Grid voor de opties */
 section div{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -206,59 +205,8 @@ section div{
 	grid-gap:1em 1em;
 }
 
-section p{
-	margin: 0;
-}
-
-/* Om de opslaan sectie links en rechts ruimte te geven */
-form>section:last-of-type{
-	padding: var(--margin-links-en-rechts);
-}
-
-/* Voor de afmetingen van de svg's in het formulier */
-ul li label svg{
-	width: 2em;
-}
-
-label input:checked + svg  {
-	filter:drop-shadow(0 0 .3em var(--color-select-state))
-}
-
-/* Het verbergen van de radio buttons */
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* Links en rechts pijltjes */
-.swiper-button-prev{
-	border: none;
-	color: var(--color-pijltjes);
-	background-color: transparent;
-}
-
-.swiper-button-next{
-	border: none;
-	color: var(--color-pijltjes);
-	background-color: transparent;
-}
-
-/* Wrapper van de svg dopper */
-article{
-	grid-area: fles;
-	justify-self: center;
-	align-self: center;
-	height: 85%;
-}
-
-svg{
-	height: 100%;
-	width: auto;
+section ul div{
+	margin: 1em 0 0 1em; 
 }
 
 /* Voor het opslaan van de dopper stap 4/4 */
@@ -279,7 +227,94 @@ form button:hover{
 	background-color: var(--color-button-hover);
 }
 
-/* doppen in form een kleur geven */
+/* Om de favorieten sectie links en rechts ruimte te geven */
+form>section:last-of-type{
+	padding: var(--margin-links-en-rechts);
+}
+
+
+
+
+
+/*********************************************/
+/*  STYLING VOOR DE SVG'S IN HET FORMULIER  */
+/*********************************************/
+/* Het verbergen van de radio buttons */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* De bullets weghalen voor de svg opties */
+section ul{
+	list-style-type: none;
+}
+
+/* Voor de afmetingen van de svg's in het formulier */
+section ul li label svg{
+	width: 2em;
+}
+
+/* Styling als een svg geselecteerd is */
+label input:checked + svg  {
+	filter:drop-shadow(0 0 .3em var(--color-select-state))
+}
+
+
+
+
+
+/********************/
+/*  VOOR DE SWIPER  */
+/********************/
+/* Links en rechts pijltjes */
+.swiper-button-prev{
+	border: none;
+	color: var(--color-pijltjes);
+	background-color: transparent;
+}
+
+.swiper-button-next{
+	border: none;
+	color: var(--color-pijltjes);
+	background-color: transparent;
+}
+
+/* swiper pagination */
+section p{
+	margin: 0;
+}
+
+
+/************************/
+/*   GROTE SVG DOPPER   */
+/************************/
+/* Wrapper van de svg dopper */
+article{
+	grid-area: fles;
+	justify-self: center;
+	align-self: center;
+	height: 85%;
+}
+
+svg{
+	height: 100%;
+	width: auto;
+}
+
+
+
+
+
+/******************************/
+/*   SVG OPTIES KLEUR GEVEN   */
+/******************************/
+/* doppen een kleur geven */
 form section:nth-of-type(1) li:nth-of-type(1) label svg{
 	fill: var(--color-dopper-polarBlue);
 }
@@ -304,7 +339,7 @@ form section:nth-of-type(1) li:nth-of-type(6) label svg{
 	fill: var(--color-dopper-moodyMint);
 }
 
-/* Cup in form een kleur geven */
+/* Cup een kleur geven */
 form section:nth-of-type(2) li:nth-of-type(1) label svg{
 	fill: var(--color-dopper-white);
 }
@@ -313,7 +348,7 @@ form section:nth-of-type(2) li:nth-of-type(2) label svg{
 	fill: var(--color-dopper-black);
 }
 
-/* Bottle in form een kleur geven */
+/* Bottle een kleur geven */
 form section:nth-of-type(3) li:nth-of-type(1) label svg{
 	fill: var(--color-dopper-polarBlue);
 }
@@ -339,7 +374,9 @@ form section:nth-of-type(3) li:nth-of-type(6) label svg{
 }
 
 
-
+/****************************/
+/*   SVG DOPPER CUSTOMIZEN  */
+/****************************/
 /* Kleuren voor de dop */
 #dop {
 	fill: var(--color-dopper-polarBlue);
@@ -424,7 +461,7 @@ form section:nth-of-type(3) li:nth-of-type(6) label svg{
 		font-size:1.7em;
 	}
 
-	/* grid aanpassen van header, fles en opties op desktop */
+	/* Grid aanpassen van header, fles en opties op desktop */
   div:nth-of-type(1){
 		grid-template-rows: max-content 1fr;
 		grid-template-columns: .7fr 1.3fr;
@@ -436,10 +473,10 @@ form section:nth-of-type(3) li:nth-of-type(6) label svg{
 
 	/* Om de opties margin te geven */
 	h2{
-		margin: 0 1.5em 1.7em; 
+		margin: 0 0 1em 1.52em; 
 	}
 
-	ul div{
+	section ul div{
 		margin: 0 0 5em 2em; 
 	}
 
@@ -448,7 +485,7 @@ form section:nth-of-type(3) li:nth-of-type(6) label svg{
 	}
 
 	/* svg opties groter maken op desktop */
-	ul li label svg{
+	section ul li label svg{
 		width: 3em;
 	}
 }
